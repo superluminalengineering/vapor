@@ -15,49 +15,49 @@ let package = Package(
     ],
     dependencies: [
         // HTTP client library built on SwiftNIO
-        .package(url: "https://github.com/swift-server/async-http-client.git", from: "1.10.0"),
+        .package(url: "https://github.com/swift-server/async-http-client.git", exact: "1.18.0"),
 
         // Sugary extensions for the SwiftNIO library
-        .package(url: "https://github.com/vapor/async-kit.git", from: "1.15.0"),
+        .package(url: "https://github.com/vapor/async-kit.git", exact: "1.17.0"),
 
         // 💻 APIs for creating interactive CLI tools.
-        .package(url: "https://github.com/vapor/console-kit.git", from: "4.0.0"),
+        .package(url: "https://github.com/vapor/console-kit.git", exact: "4.6.0"),
 
         // 🔑 Hashing (SHA2, HMAC), encryption (AES), public-key (RSA), and random data generation.
-        .package(url: "https://github.com/apple/swift-crypto.git", "1.0.0" ..< "3.0.0"),
+        .package(url: "https://github.com/apple/swift-crypto.git", exact: "2.5.0"),
 
         // 🚍 High-performance trie-node router.
-        .package(url: "https://github.com/vapor/routing-kit.git", from: "4.5.0"),
+        .package(url: "https://github.com/vapor/routing-kit.git", exact: "4.7.2"),
 
         // 💥 Backtraces for Swift on Linux
-        .package(url: "https://github.com/swift-server/swift-backtrace.git", from: "1.1.1"),
+        .package(url: "https://github.com/swift-server/swift-backtrace.git", exact: "1.3.3"),
         
         // Event-driven network application framework for high performance protocol servers & clients, non-blocking.
-        .package(url: "https://github.com/apple/swift-nio.git", from: "2.44.0"),
+        .package(url: "https://github.com/apple/swift-nio.git", exact: "2.53.0"),
         
         // Bindings to OpenSSL-compatible libraries for TLS support in SwiftNIO
-        .package(url: "https://github.com/apple/swift-nio-ssl.git", from: "2.8.0"),
+        .package(url: "https://github.com/apple/swift-nio-ssl.git", exact: "2.24.0"),
         
         // HTTP/2 support for SwiftNIO
-        .package(url: "https://github.com/apple/swift-nio-http2.git", from: "1.20.0"),
+        .package(url: "https://github.com/apple/swift-nio-http2.git", exact: "1.26.0"),
         
         // Useful code around SwiftNIO.
-        .package(url: "https://github.com/apple/swift-nio-extras.git", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-nio-extras.git", exact: "1.19.0"),
         
         // Swift logging API
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-log.git", exact: "1.5.2"),
 
         // Swift metrics API
-        .package(url: "https://github.com/apple/swift-metrics.git", from: "2.0.0"),
+        .package(url: "https://github.com/apple/swift-metrics.git", exact: "2.3.4"),
         
         // Swift collection algorithms
-        .package(url: "https://github.com/apple/swift-algorithms.git", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-algorithms.git", exact: "1.0.0"),
 
         // WebSocket client library built on SwiftNIO
         .package(url: "https://github.com/vapor/websocket-kit.git", exact: "2.9.1"),
         
         // MultipartKit, Multipart encoding and decoding
-        .package(url: "https://github.com/vapor/multipart-kit.git", from: "4.2.1"),
+        .package(url: "https://github.com/vapor/multipart-kit.git", exact: "4.5.4"),
     ],
     targets: [
         // C helpers
